@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de-at">
+    <head>
+        <title>Rock-Paper-Scissors-Lizard-Spock</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.24.1/sweetalert2.all.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/rpsls.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#author_info").click(function(){
+                    swal('Who made this?',
+                         'This web-based version of "Rock Paper Scissors Lizard Spock" is my first ever JavaScript web-app. Made with love by Mike Unge.<br><br>You can find miKeunge on <a href="https://twitter.com/mikeodaso">Twitter</a> or <a href="https://github.com/MikeUnge">Github</a>. And please feel free to fork this app.')
+                });
+                $("#credits_info").click(function(){
+                    swal('Mentions & Credits',
+                         'Rock Paper Scissors Lizard Spock" was built using <a href="https://www.javascript.com/">JavaScript</a>, <a href="https://jquery.com/">JQuery</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/sweetalert2/sweetalert2">SweetAlert2</a> and <a href="https://fonts.google.com/">Google Fonts</a>.<br><br>The icons in this app were acquired from the <a href="https://thenounproject.com/"></a>Noun Project<ul><li>Fist icon designed by <a href="https://thenounproject.com/">Till Teenck</a></li><li>Rock icon designed by <a href="https://thenounproject.com/">John Maravelakis</a></li><li>Paper icon designed by <a href="https://thenounproject.com/">Dmitry Baranovskiy</a></li><li>Scissors icon designed by <a href="https://thenounproject.com/">Lorena Salagre</a></li><li>Lizard icon designed by <a href="https://thenounproject.com/">Ben Markoch</a></li><li>Inspiration & design idea by <a href="https://github.com/adventureandart/rpsls">Mandi Wise</a></li></ul>')
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="headline">
+            <h1 class="text-center">Rock-Paper-Scissors-Lizard-Spock</h1>
+            <h3 id="small_headline" class="text-center"><small>Select your move below..</small></h3>
+        </div>
+        <div id="controller">
+            <div class="row">
+                <div id="player" class="col-xs-6">
+                    <h3><b>You</b></h3>
+                    <div class="circle">
+                        <svg height="220" width="220"><circle cx="110" cy="110" r="108" stroke="black" stroke-width="5" fill="transparent" /></svg>
+                    </div>
+                    <section class="image">
+                        <img id="playerImg" src="img/start.svg" alt="Player" style="width:150px; height:150px; -webkit-transform: scaleX(-1) rotate(-45deg); transform: scaleX(-1) rotate(-45deg);">
+                    </section>
+                </div>
+                <div id="robot" class="col-xs-6">
+                    <h3><b>Robot</b></h3>
+                    <div class="circle">
+                        <svg height="220" width="220"><circle cx="110" cy="110" r="108" stroke="black" stroke-width="5" fill="transparent" /></svg>
+                    </div>
+                    <section class="image">
+                        <img id="robotImg" src="img/start.svg" alt="Robot" style="transform:rotate(-45deg); width:150px; height:150px;">
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <select class="form-control" id="move">
+                <option selected>-- Select Move --</option>
+                <option>Rock</option>
+                <option>Paper</option>
+                <option>Scissor</option>
+                <option>Lizard</option>
+                <option>Spock</option>
+            </select>
+            <button type="button" class="btn btn-primary" onclick="playMove()">Play Move!</button>
+        </div>
+        <div class="statistics">
+            <div class="text">
+                <div class="row">
+                    <div class="col-xs-6 col-md-4"><h4><b>Your Wins</b></h4></div>
+                    <div class="col-xs-6 col-md-4"><h4><b>Ties</b></h4></div>
+                    <div class="col-xs-6 col-md-4"><h4><b>Robot Wins</b></h4></div>
+                </div>
+            </div>
+            <div class="count">
+                <div class="row">
+                    <div id="win" class="col-xs-6 col-md-4"><h4>0</h4></div>
+                    <div id="tie" class="col-xs-6 col-md-4"><h4>0</h4></div>
+                    <div id="lose" class="col-xs-6 col-md-4"><h4>0</h4></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_content">
+                <a id="author_info">Author</a>
+                <span>|</span>
+                <a id="credits_info">Mentions & Credits</a>
+            </div>
+        </footer>              
+    </body>
+</html>
