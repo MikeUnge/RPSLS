@@ -1,11 +1,27 @@
 # Rock-Paper-Scissor-Lizard-Spock
 
 ## About RPSLS
-<p>This App was inspired by The Big Bang Theory and also by <a href="https://www.mandiwise.com">Mandi Wise</a> of Adventure & Art Interactive. Go on and check it out, it's worth it! <a href="https://github.com/adventureandart/rpsls">>> Mandi Wise's App <<</a>
-<p>Rock Paper Scissors Lizard Spock" was built using <a href="https://www.javascript.com/">JavaScript</a>, <a href="https://jquery.com/">JQuery</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://github.com/sweetalert2/sweetalert2">SweetAlert2</a> and <a href="https://fonts.google.com/">Google Fonts</a>.<br><br>The icons in this app were acquired from the <a href="https://thenounproject.com/">Noun Project</a>:<ul><li>Fist icon designed by <a href="https://thenounproject.com/">Till Teenck</a></li><li>Rock icon designed by <a href="https://thenounproject.com/">John Maravelakis</a></li><li>Paper icon designed by <a href="https://thenounproject.com/">Dmitry Baranovskiy</a></li><li>Scissors icon designed by <a href="https://thenounproject.com/">Lorena Salagre</a></li><li>Lizard icon designed by <a href="https://thenounproject.com/">Ben Markoch</a></li><li>Inspiration & design idea by <a href="https://github.com/adventureandart/rpsls">Mandi Wise</a></li></ul></p>
+This App was inspired by The Big Bang Theory and also by [Mandi Wise](https://www.mandiwise.com) of Adventure & Art Interactive. Go on and check it out, it's worth it! [>> Mandi Wise's App <<](https://github.com/adventureandart/rpsls)
+
+Rock Paper Scissors Lizard Spock" was built using [JavaScript](https://www.javascript.com/), [JQuery](https://jquery.com/), [Bootstrap](http://getbootstrap.com/) [SweetAlert2](https://github.com/sweetalert2/sweetalert2) and [Google Fonts](https://fonts.google.com/).
+
+The icons in this app were acquired from the [Noun Project](https://thenounproject.com/):
+* Fist icon designed by [Till Teenck](https://thenounproject.com/)
+* Rock icon designed by [John Maravelakis](https://thenounproject.com/)
+* Paper icon designed by [Dmitry Baranovskiy](https://thenounproject.com/)
+* Scissors icon designed by [Lorena Salagre](https://thenounproject.com/)
+* Lizard icon designed by [Ben Markoch](https://thenounproject.com/)
+* Inspiration & design idea by [Mandi Wise](https://github.com/adventureandart/rpsls)
 
 ## About the Author
-<p>This web-based version of "Rock Paper Scissors Lizard Spock" is my first ever JavaScript web-app. Made with love by miKeunge.<br><br>You can find miKeunge on <a href="https://twitter.com/mikeodaso">Twitter</a> or <a href="https://github.com/MikeUnge">Github</a>. And please feel free to fork this app.</p>
+This web-based version of "Rock Paper Scissors Lizard Spock" is my first ever JavaScript web-app. Made with love by miKeunge.
+
+You can find miKeunge on [Twitter](https://twitter.com/mikeodaso) or [Github](https://github.com/MikeUnge). And please feel free to fork this app.
+
+## Todo
+* Bot vs Bot
+* Better animations
+* Re-think bot function
 
 ## License
 MIT License
